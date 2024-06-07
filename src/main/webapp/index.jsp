@@ -1,79 +1,88 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<!-- JSTL Core -->
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>First-Project</title>
+<!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
-<style>
-      * {
-        box-sizing: border-box;
-      }
+<!-- icon -->
+<script src="https://kit.fontawesome.com/1ee4acc8d4.js" crossorigin="anonymous"></script>
 
-      .container div {
-        border: 1px solid black;
-      }
+<!-- Project local -->
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
 
-      .container {
-        width: 500px;
-        height: 150px;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-      }
-
-      .container .index_box {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .container .bottom_boxes {
-        flex: 3;
-        display: flex;
-      }
-
-      .container .bottom_boxes .input_box,
-      .output_box {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
-    
 </head>
-<body> 
+<body>
+	<!-- container -->
+    <div class="container">
     
-
-    <div class="wrap">
-      <div class="container">
-        <div class="index_box">Messages</div>
-        <div class="bottom_boxes">
-          <div class="input_box">
-            <button id="input_btn" name="input_btn">toInput</button>
-          </div>
-          <div class="output_box">
-              <button id="output_btn" name="output_btn">toOutput</button>
-          </div>
+        <!-- nav -->
+        <nav>
+            <div class="navbar">
+                <ul class="navbar-nav">
+                    <li>
+                        <i class="fa-solid fa-burst"></i>
+                    </li>
+                    <li>
+                        <ul class="icons">
+                            <!-- Games -->
+                            <li>
+                                <a href="index.jsp">
+                                    <i class="fa-solid fa-meteor"></i>
+                                </a>
+                            </li>
+                            <!-- About -->
+                            <li>
+                                <a href="index.jsp">
+                                    <i class="fa-solid fa-user-large"></i>
+                                </a>
+                            </li>
+                            <!-- Search -->
+                            <li>
+                                <a href="index.jsp">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <!-- <li id="mode">
+                                    <i class="fa-regular fa-moon"></i>
+                                    <i class="fa-solid fa-moon" style="display: none;"></i>
+                            </li> -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- ㅡmain -->
+        <main class="main">
+            <section class="list">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+            </section>
+            <div class="btn">
+                <span id="prev"></span>
+                <span id="next"></span>
+            </div>
+        </main>
+        
+        <!-- mode -->
+        <div id="mode">
+            <i class="fa-regular fa-lightbulb" style="display: none;"></i>
+            <i class="fa-solid fa-lightbulb"></i>
         </div>
-      </div>
     </div>
 
-    <script>
-      let input_btn = document.getElementById("input_btn");
-      let output_btn = document.getElementById("output_btn");
-
-      input_btn.onclick = function () {
-        location.href = "/inputform.jsp";
-      };
-      output_btn.onclick = function () {
-        location.href = "/output.movies";
-      };
-    </script>
-  </body>
+	
+</body>
 </html>
