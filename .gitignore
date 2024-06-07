@@ -1,7 +1,5 @@
-/src/main/java/test/TestController.java
-/src/main/webapp/test/test.jsp
-src/main/webapp/haram/haram.jsp
-
+src/main/java/test/
+src/main/webapp/test/
 .project
 .classpath
 # Created by https://www.toptal.com/developers/gitignore/api/java,git,windows,eclipse
