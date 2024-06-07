@@ -1,4 +1,7 @@
 
+src/main/java/test/
+src/main/webapp/test/
+
 .project
 .classpath
 # Created by https://www.toptal.com/developers/gitignore/api/java,git,windows,eclipse
